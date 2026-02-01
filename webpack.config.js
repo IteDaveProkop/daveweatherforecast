@@ -32,6 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       title: 'Předpověď počasí',
+      publicPath: process.env.NODE_ENV === 'production' ? '/DaveWeatherForecast/' : '/',
     }),
     new CopyPlugin({
       patterns: [
