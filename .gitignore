@@ -1,31 +1,97 @@
 # Dependencies
 node_modules/
+.pnp
+.pnp.js
 
-# Build
+# Production Build
+dist/
+build/
+*.tsbuildinfo
+
+# Webpack
+.webpack/
+webpack-output.log
+
+# Capacitor/Mobile
 android/app/build/
 android/.gradle/
+android/.idea/
+android/local.properties
+android/gradle/
+android/gradlew
+android/gradlew.bat
 ios/build/
+ios/Pods/
+ios/*.xcworkspace
 *.jks
 *.keystore
+*.p8
+*.p12
+*.mobileprovision
 
-# IDE
+# IDE & Editors
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
 
-# Misc
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Environment
+# Environment Variables
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Testing
+# Testing & Coverage
 coverage/
 .nyc_output/
+*.lcov
+.jest/
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# Package Manager Locks (optional - uncomment if not tracking)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Debugging
+chrome-debug.log
+firefox-debug.log
+
+# Optional npm cache
+.npm
+
+# Optional REPL history
+.node_repl_history

@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: process.env.NODE_ENV === 'production' ? '/DaveWeatherForecast/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/daveweatherforecast/' : '/',
     clean: true,
   },
   module: {
@@ -32,7 +32,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       title: 'Předpověď počasí',
-      publicPath: process.env.NODE_ENV === 'production' ? '/DaveWeatherForecast/' : '/',
+      publicPath: process.env.NODE_ENV === 'production' ? '/daveweatherforecast/' : '/',
     }),
     new CopyPlugin({
       patterns: [
